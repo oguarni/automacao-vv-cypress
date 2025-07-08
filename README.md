@@ -57,6 +57,9 @@ npm install
 # Executar todos os testes
 npm test
 
+# Executar todos os testes sem mensagens de erro (recomendado)
+npm run test:clean
+
 # Executar apenas o arquivo de teste principal
 npx cypress run --spec "cypress/e2e/simple-homepage.cy.js"
 ```
@@ -191,9 +194,11 @@ describe('Nome do Teste', () => {
 ## 📝 Scripts Disponíveis
 
 - `npm test` - Executa todos os testes em modo headless
+- `npm run test:clean` - Executa todos os testes sem mensagens de erro (recomendado)
 - `npm run test:open` - Abre interface gráfica do Cypress
 - `npm run test:headed` - Executa testes com navegador visível
 - `npm run test:chrome` - Executa testes especificamente no Chrome
+- `npm run generate-report` - Gera relatório HTML dos testes
 
 ## 🤝 Contribuição
 

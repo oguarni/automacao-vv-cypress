@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
+    "test": "ELECTRON_ENABLE_LOGGING=false cypress run 2>/dev/null || cypress run",
     "test:open": "cypress open",
-    "test:headed": "cypress run --headed",
-    "test:chrome": "cypress run --browser chrome"
+    "test:headed": "ELECTRON_ENABLE_LOGGING=false cypress run --headed 2>/dev/null || cypress run --headed",
+    "test:chrome": "cypress run --browser chrome",
+    "test:clean": "ELECTRON_ENABLE_LOGGING=false cypress run --quiet 2>/dev/null || cypress run --quiet",
+    "generate-report": "node generate-report.js"
   },
   "keywords": [],
   "author": "",
