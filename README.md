@@ -41,7 +41,7 @@ Este projeto implementa testes automatizados para o site [Kurzgesagt.org](https:
 ### Instalação
 ```bash
 # Clone o repositório (se aplicável)
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/oguarni/automacao-vv-cypress
 
 # Navegue para o diretório do projeto
 cd kurzgesagt-cypress-tests
@@ -213,7 +213,7 @@ Este projeto é para fins educacionais e não possui licença específica.
 
 **Gabriel Felipe Guarnieri**  
 Disciplina: Verificação e Validação  
-Instituição: [Nome da Instituição]
+Instituição: UTFPR-DV
 
 ## 📚 Referências
 
@@ -222,5 +222,3 @@ Instituição: [Nome da Instituição]
 - [Melhores práticas de testes automatizados](https://docs.cypress.io/guides/references/best-practices)
 
 ---
-
-*Este README foi gerado automaticamente como parte do projeto de automação de testes.*
