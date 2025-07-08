@@ -41,7 +41,7 @@ Este projeto implementa testes automatizados para o site [Kurzgesagt.org](https:
 ### Instalação
 ```bash
 # Clone o repositório (se aplicável)
-git clone https://github.com/oguarni/automacao-vv-cypress
+git clone https://github.com/oguarni/automacao-vv-cypress.git
 
 # Navegue para o diretório do projeto
 cd kurzgesagt-cypress-tests
@@ -199,26 +199,6 @@ describe('Nome do Teste', () => {
 - `npm run test:headed` - Executa testes com navegador visível
 - `npm run test:chrome` - Executa testes especificamente no Chrome
 - `npm run generate-report` - Gera relatório HTML dos testes
-
-## 🤝 Contribuição
-
-Este projeto foi desenvolvido para fins acadêmicos. Para melhorias:
-
-1. Fork o repositório
-2. Crie uma branch para sua feature
-3. Faça commit das mudanças
-4. Push para a branch
-5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto é para fins educacionais e não possui licença específica.
-
-## 📞 Contato
-
-**Gabriel Felipe Guarnieri**  
-Disciplina: Verificação e Validação  
-Instituição: UTFPR-DV
 
 ## 📚 Referências
 
