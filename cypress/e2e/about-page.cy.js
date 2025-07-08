@@ -17,7 +17,7 @@ describe('About Page Information', () => {
         cy.wait(2000)
         
         // Verify about page content
-        cy.get('body').should('contain.text', /about|team|mission|who/i)
+        cy.get('body').should('contain', 'Who we are')
       } else {
         // Check footer for about information
         cy.log('Checking footer for about information')
@@ -35,15 +35,12 @@ describe('About Page Information', () => {
       '[class*="social"]'
     ]
     
-    let socialFound = false
-    socialSelectors.forEach(selector => {
-      cy.get('body').then($body => {
-        if ($body.find(selector).length > 0) {
-          socialFound = true
-        }
-      })
+    // Check if at least one social media link exists
+    cy.get('body').then($body => {
+      const socialFound = socialSelectors.some(selector => 
+        $body.find(selector).length > 0
+      )
+      expect(socialFound).to.be.true
     })
-    
-    cy.wrap(socialFound).should('be.true')
   })
 })
